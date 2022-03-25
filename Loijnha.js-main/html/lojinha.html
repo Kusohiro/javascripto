@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Lojinha</title>
+</head>
+<body>
+<table>   
+<p class="joaquim" id="nome">visitante</p>
+<input class="joaquim" type="text" id="visitante">
+<button onclick="visita()">alterar nome</button><br>
+<br>
+</table>
+<table>   
+        <thead>
+			<tr>
+        <th>Shiro (figure)</th>
+        <th>Cthulhu anime girl (figure)</th>
+   </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <img src="../img/shiro.jpg" alt="shirofigure.jpg">
+            <p id="shiro"> 0 </p>
+            <p >preço unitário: 349.99</p> <h5 id ="preco1"></h5>
+        </td>
+        <td>
+            <img src="../img/cthulhuj.jpg" alt="cthulhuanime.jpg">
+            <p id="cthulhu"> 0 </p>
+            <p >preço unitário: 299.99</p><h5 id ="preco2"></h5>
+        </td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <td>
+            <button onclick="acao('+'), preco('+')"> + </button>
+            <button onclick="acao('-'), preco('-')"> - </button>
+        </td>
+        <td>
+            <button onclick="acao('++'), preco('++')"> + </button>
+            <button onclick="acao('--'), preco('--')"> - </button>
+        </td>
+    </tfoot>
+ </table>
+ <br>
+ <button onclick="finalizarCompra()">finalizar compra</button>
+<script src="../js/lojinha.js"></script>
+</body>
+</html>
